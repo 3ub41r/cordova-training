@@ -218,6 +218,12 @@
                             <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a>
                         </li>
                         <li>
+                            Java Development Kit - 
+                            <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">
+                                http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+                            </a>
+                        </li>
+                        <li>
                             Android SDK (or Android Studio) - 
                             <a href="http://developer.android.com/sdk/index.html">http://developer.android.com/sdk/index.html</a>
                         </li>
@@ -230,7 +236,7 @@
 
                 <section>
                     <h2>Stuff That Might Help</h2>
-                    <h3>Windows</h3>
+                    <h3>(Windows)</h3>
                     <ul>
                         <li>
                             cmder (Comes with <code>git</code>) - 
@@ -241,6 +247,73 @@
                             <a href="https://www.sublimetext.com/3">https://www.sublimetext.com/3</a>
                         </li>
                     </ul>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Lets Set It Up</h2>    
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Install Node.js
+
+                        Verify your installation:
+
+                        ```    
+                        $ node -v
+                        v4.4.0
+                        ```
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Install JDK
+
+                        Verify your installation:
+
+                        ```
+                        $ java -version
+                        java version "1.8.0_74"
+                        Java(TM) SE Runtime Environment (build 1.8.0_74-b02)
+                        Java HotSpot(TM) 64-Bit Server VM (build 25.74-b02, mixed mode)
+                        ```
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Install Android Studio
+
+                        Add environment variable, `ANDROID_HOME`:
+
+                        ```    
+                        export ANDROID_HOME="$HOME/Android/Sdk"
+                        ```
+
+                        **Note:** your computer may need to be restarted 
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Install Genymotion (optional)
+
+                        ![Genymotion](img/genymotion.png "Genymotion")
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Install cmder (optional)
+                        ### (Windows)
+
+                        ![cmder](img/cmder.png "cmder")
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ## Install Sublime Text (optional)
+
+                        ![Sublime Text](img/sublimetext.png "Sublime Text")
+                        </script>
+                    </section>
                 </section>
 
                 <section>
