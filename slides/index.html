@@ -209,9 +209,6 @@
 					</blockquote>
 				</section>
 
-				<section data-background="img/cordova.png">
-				</section>
-
 				<section>
 					<h2>The Environment</h2>
 					<h3>Lets get started!</h3>
@@ -258,7 +255,7 @@
 
                 <section>
                     <section>
-                        <h2>Lets Set It Up</h2>    
+                        <h2>Let's Set It Up</h2>    
                     </section>
                     <section data-markdown>
                         <script type="text/template">
@@ -373,51 +370,123 @@
                 </section>
 
                 <section>
-                    <h2><a href="https://github.com/">Github</a></h2>
-                    <img src="img/github_profile.png">
-                </section>
+                    <section>
+                        <h2><a href="https://github.com/">Github</a></h2>
+                        <img src="img/github_profile.png">
+                    </section>
 
-                <section data-markdown>
-                    ```
-                    $ git init
-                    Initialized empty Git repository in /home/project/cordova/.git/
+                    <section data-markdown>
+                        Initialize a repository
 
-                    $ echo "my name is zubair" > readme.txt
+                        ```
+                        $ git init
+                        Initialized empty Git repository in /home/project/cordova/.git/
 
-                    $ ls -lah 
-                    total 16K
-                    drwxrwxr-x 3 zubair zubair 4.0K Mac  23 17:33 .
-                    drwxrwxr-x 5 zubair zubair 4.0K Mac  23 17:29 ..
-                    drwxrwxr-x 7 zubair zubair 4.0K Mac  23 17:33 .git
-                    -rw-rw-r-- 1 zubair zubair   18 Mac  23 17:33 readme.txt
+                        $ echo "my name is zubair" > readme.txt
 
-                    $ git status
-                    On branch master
+                        $ ls -lah 
+                        total 16K
+                        drwxrwxr-x 3 zubair zubair 4.0K Mac  23 17:33 .
+                        drwxrwxr-x 5 zubair zubair 4.0K Mac  23 17:29 ..
+                        drwxrwxr-x 7 zubair zubair 4.0K Mac  23 17:33 .git
+                        -rw-rw-r-- 1 zubair zubair   18 Mac  23 17:33 readme.txt
 
-                    Initial commit
-
-                    Untracked files:
-                      (use "git add <file>..." to include in what will be committed)
-
-                        readme.txt
-
-                    nothing added to commit but untracked files present (use "git add" to track)
-
-                    $ git add readme.txt
-
-                    $ git commit -m "Initial commit"
-                    [master (root-commit) 18381ed] Initial commit
-                     1 file changed, 1 insertion(+)
-                     create mode 100644 readme.txt
-
-                    $ git log
-                    commit 18381ed3c57da96e7905f3c86808c272be89aa25
-                    Author: zubair <zubairabuhasan@gmail.com>
-                    Date:   Wed Mar 23 17:37:12 2016 +0800
+                        $ git status
+                        On branch master
 
                         Initial commit
-                    (END)
+
+                        Untracked files:
+                          (use "git add <file>..." to include in what will be committed)
+
+                            readme.txt
+
+                        nothing added to commit but untracked files present (use "git add" to track)
+
+                        $ git add readme.txt
+
+                        $ git commit -m "Initial commit"
+                        [master (root-commit) 18381ed] Initial commit
+                         1 file changed, 1 insertion(+)
+                         create mode 100644 readme.txt
+
+                        $ git log
+                        commit 18381ed3c57da96e7905f3c86808c272be89aa25
+                        Author: zubair <zubairabuhasan@gmail.com>
+                        Date:   Wed Mar 23 17:37:12 2016 +0800
+
+                            Initial commit
+                        (END)
+                        ```
+                    </section>
+                    <section>
+                        <p>Let's create a remote repository on <a href="https://github.com/">Github</a></p>
+                        <img src="img/repo.png">
+                    </section>
+                    <section data-markdown>
+                        Push our code!
+
+                        ```
+                        git remote add origin https://github.com/3ub41r/temp.git
+                        git push -u origin master
+                        ```
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Let's Get Started</h2>
+                        <h3>You First Hybrid App</h3>
+                    </section>
+                    <section data-markdown>
+                    ### Create your app
+
                     ```
+                    $ cordova create notes com.example.notes Notes
+                    ``` 
+                    </section>
+                    <section>
+                        <h3>Your directories</h3>
+                        <img src="img/directories.png">
+                    </section>
+                    <section data-markdown>
+                    ### Add platform
+
+                    ```
+                    $ cordova platform add android --save
+                    ``` 
+                    </section>
+                    <section data-markdown>
+                    ### Check requirements
+
+                    ```
+                    $ cordova requirements
+                    Requirements check results for android:
+                    Java JDK: installed .
+                    Android SDK: installed
+                    Android target: installed android-19,android-21,android-22,android-23,Google Inc.:Google APIs:19,Google Inc.:Google APIs (x86 System Image):19,Google Inc.:Google APIs:23
+                    Gradle: installed
+                    ``` 
+                    </section>
+                    <section data-markdown>
+                    ### Build it
+
+                    ```
+                    $ cordova build
+                    ``` 
+                    </section>
+                    <section data-markdown>
+                    ### Run it!
+
+                    ```
+                    $ cordova run
+                    ``` 
+                    </section>
+
+                </section>
+
+                <section data-background="img/code.png">
+                    <h2>Let's Write Code</h2>
                 </section>
 
 				<!-- Example of nested vertical slides -->
