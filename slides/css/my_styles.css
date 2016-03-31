@@ -1,2 +1,5 @@
 /** My Styles */
 .reveal section img.borderless { background:none; border:none; box-shadow:none; }
+.reveal h2.white-text {
+    color: #ffffff;
+}
