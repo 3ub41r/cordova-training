@@ -489,6 +489,171 @@
                     <h2 class="white-text">Let's Write Some Code!</h2>
                 </section>
 
+                <section>
+                    
+                    <section>
+                        <h2>CSS</h2>
+                        <h3>Selectors</h3>
+                    </section>
+                    <section data-markdown>
+                        ### 1. Type Selectors
+
+                        ```
+                        body {
+                            font-family: Arial, sans-serif;
+                            font-size: small;
+                        }
+
+                        h1 {
+                            color: green;
+                        }
+
+                        em {
+                            color: red;
+                        }
+                        ```
+                    </section>
+                    <section data-markdown>
+                        ### 2. ID Selectors
+
+                        ```
+                        #intro {
+                            font-size: 130%;
+                            border: 1px solid black;
+                        }
+                        ```
+                    </section>
+                    <section data-markdown>
+                        ### 3. Class Selectors
+
+                        ```
+                        .important {
+                            background-color: yellow;
+                        }
+                        ```
+                    </section>
+                    <section data-markdown>
+                        ### 4. Descendant Selectors
+
+                        ```
+                        #intro .important {
+                            background-color: orange;
+                        }
+                        ```
+                    </section>
+                    <section>
+                        <h3>Reference</h3>
+                        <p>
+                            <a href="http://learnwebcode.com/basic-css-selectors/">http://learnwebcode.com/basic-css-selectors/</a>
+                        </p>
+                    </section>
+
+                </section>
+
+                <section>
+                    
+                    <section>
+                        <h2>CSS</h2>
+                        <h3>Properties</h3>
+                    </section>
+                    <section data-markdown>
+                        `color`
+
+                        ```
+                        p {
+                            color: green;               /* This is green with the "green" keyword */
+                            color: #008000;             /* This is green with the hexadecimal notation */
+                            color: rgb(0,128,0);        /* This is green with the RGB notation */
+                            color: hsl(120, 100%, 25%); /* This is green with the HSL notation */
+                        }
+                        ```
+                    </section>
+                    <section data-markdown>
+                        `font-family`
+
+                        ```
+                        .sansserif {
+                            font-family: Helvetica, Arial, sans-serif;
+                        }
+
+                        .serif {
+                            font-family: "Times New Roman", Times, serif;
+                        }
+                        ```
+                    </section>
+                    <section data-markdown>
+                        `font-size`
+
+                        ```
+                        .rem {
+                            font-size: 0.8rem;
+                        }
+
+                        .em {
+                            font-size: 0.8em
+                        }
+                        ```
+
+                        Units, e.g.: `px`, `em`, `rem`, `pt`
+                    </section>
+                    <section data-markdown>
+                        `font-weight`
+
+                        ```
+                        .bold {
+                            font-weight: bold;
+                        }
+                        ```
+
+                        Values, e.g.: `normal`, `bold`, `lighter`, `bolder`
+                    </section>
+                    <section data-markdown>
+                        `font-style`
+
+                        ```
+                        .italic {
+                            font-style: italic;
+                        }
+                        ```
+                        Values, e.g.: `normal`, `italic`
+                    </section>
+                    <section data-markdown>
+                        `text-transform`
+
+                        ```
+                        .transform {
+                            text-transform: uppercase;
+                        }
+                        ```
+
+                        Values, e.g.: `uppercase`, `lowercase`, `none`
+                    </section>
+                    <section data-markdown>
+                        `text-align`
+
+                        ```
+                        .center {
+                            text-align: center;
+                        }
+                        ```
+
+                        Values, e.g.: `left`, `right`, `center`, `justify`
+                    </section>
+                    <section data-markdown>
+                        `text-decoration`
+
+                        ```
+                        .strike {
+                            text-decoration: line-through;
+                        }
+                        ```
+
+                        Values, e.g.: `underline`, `overline`, `line-through`
+                    </section>
+
+                </section>
+
+
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
